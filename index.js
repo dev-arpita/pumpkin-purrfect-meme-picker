@@ -170,15 +170,6 @@ const catsData = [
 ]
 
 function getEmotionsArray(cats){
-/*
-Challenge:
-1. Set up a const and initialise it with
-   an empty array.
-2. Instead of logging out each emotion,
-   push each one to the new array.
-3. At the end of the function, log out the
-   const holding the new array.
-*/
     const emotionsArray = []
 
     for (let cat of cats){
@@ -190,9 +181,21 @@ Challenge:
     return emotionsArray
 }
 
+function renderEmotionsRadios(cats) {
+    const emotions = getEmotionsArray(cats)
+    console.log(emotions)
+}
+renderEmotionsRadios(catsData)
 /*
 Challenge:
-1. Add a nested "for of" to log out just
-   the emotions from the emotionTags array
-   in each object.
+1. Have the new function "renderEmotionsRadios"
+   take in a single parameter. Name that parameter
+   "cats".
+2. Inside renderEmotionsRadios, set up a const called
+   "emotions" and set it equals to whatever is returned
+   by calling getEmotionsArray, passing in "cats" as an
+   argument.
+3. For now, renderEmotionsRadios should just log out
+   "emotions".
+4. Call renderEmotionsRadios passing in catsData.
 */
